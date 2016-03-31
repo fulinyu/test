@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/compareresultLinearLayout1">
+
+	<LinearLayout
+		android:layout_height="0dp"
+		android:layout_width="0dp"
+		android:orientation="horizontal"
+		android:focusable="true"
+		android:focusableInTouchMode="true">
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:layout_weight="1.0">
+
+		<flyu.comparetool.ObservableScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:id="@+id/mainScrollView1">
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:text="源文件"
+				android:layout_width="match_parent"
+				android:id="@+id/TextViewShowOrigin"
+				android:background="@null"
+				android:textSize="12sp"/>
+
+		</flyu.comparetool.ObservableScrollView>
+
+		<View
+			android:layout_height="match_parent"
+			android:background="?android:attr/dividerHorizontal"
+			android:layout_width="1dp"/>
+
+		<flyu.comparetool.ObservableScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:id="@+id/mainScrollView2">
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:text="被比较文件"
+				android:layout_width="match_parent"
+				android:id="@+id/TextViewShowToCompare"
+				android:background="@null"
+				android:textSize="12sp"/>
+
+		</flyu.comparetool.ObservableScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>
+

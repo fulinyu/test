@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="测试高亮文本"
+			android:layout_width="wrap_content"
+			android:id="@+id/TextViewTest"
+			android:background="#12E747"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="字体大小"/>
+
+		<SeekBar
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/SeekBarTextSize"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="文字颜色"
+			android:layout_width="wrap_content"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/SpinnerTextColor"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="高亮文字颜色"
+			android:layout_width="wrap_content"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:spinnerMode="dropdown"
+			android:id="@+id/SpinnerHighLight"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="背景颜色"
+			android:layout_width="wrap_content"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/SpinnerBackground"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="隐藏标题栏"
+			android:id="@+id/CheckBoxHideTitle"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="隐藏状态栏"
+			android:id="@+id/CheckBoxHideStatusBar"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="勾选此选项后，你可以编辑文本，但是程序不会修改文件。"
+			android:layout_width="wrap_content"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/CheckBoxIsPermitEdit"
+			android:text="允许编辑文本"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="勾选此选项后，可能因为排版问题造成左右行数不对应"
+			android:layout_width="wrap_content"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="视图同步滚动"
+			android:id="@+id/CheckBoxScroll"/>
+
+	</LinearLayout>
+
+</ScrollView>
+
